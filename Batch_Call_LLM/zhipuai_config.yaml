@@ -1,0 +1,36 @@
+# 智谱AI模型配置
+model:
+  # 智谱AI API密钥
+  api_key: "YOUR_API_KEY"
+  # 智谱AI模型名称
+  model_name: "glm-z1-airx"
+  # 系统提示词（可选）
+  # system_prompt: "你是人工智能助手"
+  # 温度参数，控制生成文本的随机性（可选）
+  # temperature: 0.7
+  # Top-p采样参数（可选）
+  # top_p: 0.9
+  # 最大生成token数（可选）
+  max_tokens: 12000
+
+# 运行时配置
+runtime:
+  # 最大并发线程数
+  max_concurrent: 30
+  # 失败重试次数
+  retry_times: 3
+  # 重试间隔(秒)
+  retry_delay: 10
+  # 检查点保存间隔(处理多少条数据后保存一次)
+  save_interval: 10
+  # 日志级别: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  log_level: "INFO"
+
+# 输入输出配置
+io:
+  # 输入CSV文件，必须包含id和question两列
+  input_file: "../data/doubao_infer_full_data.csv"
+  # 输出CSV文件路径
+  output_file: "../data/zhipu_infer_result.csv"
+  # 检查点目录
+  checkpoint_dir: "../data/checkpoints/" 
