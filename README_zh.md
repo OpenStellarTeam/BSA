@@ -1,10 +1,6 @@
 # 概述
-
 <p align="center">
-  <img src="image/title.png" width="800px"/>
-</p>
-<p align="center">
-   🌐 <a href="https://openstellarteam.github.io/BSA/" target="_blank">网站</a> • 🤗 <a href="https://huggingface.co/datasets/OpenStellarTeam/BeyongSafeAnswer_Benchmark" target="_blank">Hugging Face</a> • ⏬ <a href="https://huggingface.co/datasets/OpenStellarTeam/BeyongSafeAnswer_Benchmark" target="_blank">数据</a> •   📃 <a href="TODO" target="_blank">论文</a> •   📊 <a href="https://openstellarteam.github.io/BSA_Leaderboard_Gitpage/" target="_blank">排行榜</a>  <br>  <a href="https://github.com/OpenStellarTeam/BSA/blob/main/README_zh.md">   中文</a> | <a href="https://github.com/OpenStellarTeam/BSA/blob/main/README.md">English</a> 
+   ⏬ <a href="Croissant/data/dataset.csv" target="_blank">数据</a> <br>  <a href="README_zh.md">   中文</a> | <a href="README.md">English</a> 
 </p> 
 
 Beyond Safe Answers 是一个创新性的基准数据集，旨在全面评估大型推理模型（LRMs）真实的风险意识，特别聚焦于模型内部的推理过程，而不仅仅关注表面输出。这一基准针对“表面安全对齐”（Superficial Safety Alignment, SSA）的关键问题进行设计，即模型虽然生成表面安全的回答，但在内部风险评估上存在不足，导致安全行为的不一致。
@@ -61,16 +57,6 @@ Beyond Safe Answers 是一个创新性的基准数据集，旨在全面评估大
   * 明确的安全指南和使用高质量推理数据进行的专门微调显著提高了 LRMs 减轻 SSA 的能力，尽管有时会以增加敏感性为代价。
 
 通过 BeyondSafeAnswer 基准测试，我们的工作推动了开发真正具有风险意识、能够稳健处理微妙的安全关键场景的 LRMs 这一关键目标。
-
----
-
-## 📊 Leaderboard
-
-详细信息：  [📊](https://openstellarteam.github.io/BSA_Leaderboard_Gitpage/)
-
-<p align="center">
-  <img src="image/leader_board.png" width="800px"/>
-</p>
 
 ---
 ## 💫 引言

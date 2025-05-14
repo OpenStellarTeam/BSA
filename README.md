@@ -1,10 +1,7 @@
 # Overview
 
 <p align="center">
-  <img src="image/title.png" width="800px"/>
-</p>
-<p align="center">
-   🌐 <a href="https://openstellarteam.github.io/BSA/" target="_blank">Website</a> • 🤗 <a href="https://huggingface.co/datasets/OpenStellarTeam/BeyongSafeAnswer_Benchmark" target="_blank">Hugging Face</a> • ⏬ <a href="https://huggingface.co/datasets/OpenStellarTeam/BeyongSafeAnswer_Benchmark" target="_blank">Data</a> •   📃 <a href="TODO" target="_blank">Paper</a> •   📊 <a href="https://openstellarteam.github.io/BSA_Leaderboard_Gitpage/" target="_blank">Leader Board</a>  <br>  <a href="https://github.com/OpenStellarTeam/BSA/blob/main/README_zh.md">   中文</a> | <a href="https://github.com/OpenStellarTeam/BSA/blob/main/README.md">English</a> 
+   ⏬ <a href="Croissant/data/dataset.csv" target="_blank">Data</a> <br>  <a href="README_zh.md">   中文</a> | <a href="README.md">English</a> 
 </p> 
 
 
@@ -62,16 +59,6 @@ This benchmark significantly contributes to ensuring AI systems are genuinely se
   * Explicit safety guidelines and specialized fine-tuning with high-quality reasoning data significantly improved LRMs' ability to mitigate SSA, albeit sometimes at the cost of increased sensitivity.
 
 Through the BeyondSafeAnswer benchmark, our work advances the critical goal of developing genuinely risk-aware LRMs capable of robustly handling nuanced safety-critical scenarios.
-
----
-
-## 📊 Leaderboard
-
-For More Info：  [📊](https://openstellarteam.github.io/BSA_Leaderboard_Gitpage/)
-
-<p align="center">
-  <img src="image/leader_board.png" width="800px"/>
-</p>
 
 ---
 
