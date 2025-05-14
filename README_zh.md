@@ -1,7 +1,103 @@
-# BeyongSafeAnswer: A Benchmark for Evaluating True Risk Awareness in Large Reasoning Models
+# 概述
+
+<p align="center">
+  <img src="image/title.png" width="800px"/>
+</p>
+<p align="center">
+   🌐 <a href="https://openstellarteam.github.io/BSA/" target="_blank">网站</a> • 🤗 <a href="https://huggingface.co/datasets/OpenStellarTeam/BeyongSafeAnswer_Benchmark" target="_blank">Hugging Face</a> • ⏬ <a href="https://huggingface.co/datasets/OpenStellarTeam/BeyongSafeAnswer_Benchmark" target="_blank">数据</a> •   📃 <a href="TODO" target="_blank">论文</a> •   📊 <a href="https://openstellarteam.github.io/BSA_Leaderboard_Gitpage/" target="_blank">排行榜</a>  <br>  <a href="https://github.com/OpenStellarTeam/BSA/blob/main/README_zh.md">   中文</a> | <a href="https://github.com/OpenStellarTeam/BSA/blob/main/README.md">English</a> 
+</p> 
+
+Beyond Safe Answers 是一个创新性的基准数据集，旨在全面评估大型推理模型（LRMs）真实的风险意识，特别聚焦于模型内部的推理过程，而不仅仅关注表面输出。这一基准针对“表面安全对齐”（Superficial Safety Alignment, SSA）的关键问题进行设计，即模型虽然生成表面安全的回答，但在内部风险评估上存在不足，导致安全行为的不一致。
+
+**Beyond Safe Answers 基准数据集的核心特点：**
+
+* **详细的风险注释**：每个样本都配备了明确的风险注释，详细说明潜在风险，精确评估模型的推理深度。
+* **全面的覆盖范围**：包含超过2,000个精心设计的样本，涵盖三种典型的SSA场景（过度敏感、认知捷径和风险遗漏），跨越9个主要风险类别，确保评估的多样性与广泛性。
+* **具有挑战性的评估**：即使是表现最优的LRMs，在正确识别风险理由方面的准确性也仅为中等水平，凸显了基准的严格性与难度。
+* **稳健的方法论**：采用严谨的人类注释、多重质量控制，并使用多个先进的LRMs进行验证，确保了数据的可靠性和有效性。
+* **深刻的结论洞察**：验证了显式安全规则、高质量推理数据的微调，以及解码策略对缓解SSA的有效性有限。
+
+---
+
+**类别与场景：**
+
+* **3种SSA场景**：包含过度敏感、认知捷径与风险遗漏。
+* **9个主要风险类别**：涵盖了冒犯与偏见、特殊监管物品、财产侵权、隐私侵犯、身心健康、暴力与恐怖主义、伦理与道德、谣言和儿童色情等关键领域。
+
+---
+
+**Beyond Safe Answers 作为一项重要资源的价值：**
+
+* 评估LRMs的内部推理一致性及其真实的风险识别能力。
+* 识别和解决可能导致不安全结果的表面安全对齐问题。
+* 为开发真正安全且具备风险意识的AI系统提供全面的评测工具。
+
+这一基准显著推动了AI系统的安全性研究，确保系统真正安全并紧密贴合安全关键场景的要求。
+
+---
+
+<p align="center">
+  <img src="image/category_en.png" width="700px"/>
+</p>
+
+## 💫 引言
+
+* 近期，大量研究涌现，聚焦于评估大型推理模型（LRMs）的安全性，尤其强调模型推理过程与安全关键标准的对齐。尽管现有的一些基准测试能够评估响应层面的安全性，但它们往往忽略了更深层次的安全推理能力，这导致了一种被称为表面安全对齐（Superficial Safety Alignment, SSA）现象的出现。SSA 指的是 LRMs 尽管其内部推理未能准确检测和减轻潜在风险，却生成了表面上安全的响应。
+
+* 为了系统地研究和解决 SSA 问题，我们引入了 **BeyondSafeAnswer Bench (BSA)** 数据集。这是一个全新的基准测试，包含超过2000个精心设计的实例，覆盖了3种不同的 SSA 场景：**过度敏感**、**认知捷径**和**风险遗漏**。该数据集全面涵盖了9个主要风险类别，如隐私、道德、暴力和财产侵权。
+
+* BeyondSafeAnswer 数据集具有以下几个关键特性：
+
+  * 🚩 **以风险为核心：** 专门设计用于严格测试模型真实的风险意识和推理深度，而非仅仅表面上遵守安全启发式规则。
+  * 📑 **详尽标注：** 每个实例都包含详细的风险基本原理，明确捕捉了严格安全推理评估所需的复杂性和细微差别。
+  * 🌐 **全面覆盖：** 包含跨多个风险领域的不同场景，为在各种安全关键上下文中进行基准测试提供了坚实的平台。
+  * 🔍 **评估指标：** 包括明确定义的评估指标，如 Safe\@1、Think\@1、Safe\@k 和 Think\@k，以系统评估安全一致性和推理准确性。
+  * 📈 **富有挑战性：** 旨在揭示当前 LRMs 的显著弱点，使其成为识别模型改进关键领域的理想工具。
+
+* 我们使用23个最先进的 LRMs 进行的广泛评估揭示了几个关键发现：
+
+  * 表现最好的模型在准确识别风险基本原理方面仍然能力有限，准确率仅为38%。
+  * 许多 LRMs 在表面安全的输出与其潜在的推理能力之间表现出显著差异，凸显了 SSA 现象的普遍性。
+  * 明确的安全指南和使用高质量推理数据进行的专门微调显著提高了 LRMs 减轻 SSA 的能力，尽管有时会以增加敏感性为代价。
+
+通过 BeyondSafeAnswer 基准测试，我们的工作推动了开发真正具有风险意识、能够稳健处理微妙的安全关键场景的 LRMs 这一关键目标。
+
+---
+
+## 📊 Leaderboard
+
+详细信息：  [📊](https://openstellarteam.github.io/BSA_Leaderboard_Gitpage/)
+
+<p align="center">
+  <img src="image/leader_board.png" width="800px"/>
+</p>
+
+---
+## 💫 引言
+
+* 近期，围绕大型推理模型（LRMs）安全性的评估研究取得了显著进展，特别关注于模型推理过程与安全关键标准之间的对齐问题。尽管已有一些基准评测模型在响应层面的安全表现，但这些基准往往忽视更深层次的安全推理能力，导致一种称为浅表安全对齐（Superficial Safety Alignment，SSA）的现象出现。当LRMs生成表面上安全的响应时，其内部推理过程却未能准确识别并降低潜在风险，这便是SSA的典型表现。
+
+* 为系统性地研究并解决SSA问题，我们提出了\*\*BeyondSafeAnswer Bench（BSA）\*\*数据集。这一新颖的基准数据集包含超过2,000个精心设计的样本，涵盖了三种典型的SSA场景：**过度敏感（Over-sensitivity）**、**认知捷径（Cognitive Shortcut）** 和 **风险遗漏（Risk Omission）**。数据集广泛覆盖了隐私、伦理、暴力和财产侵权等9大主要风险类别。
+
+* BeyondSafeAnswer数据集具有以下几个关键特点：
+
+  * 🚩 **聚焦风险**：专门针对模型真实的风险意识和推理深度进行严格测试，而非仅限于表面的安全启发规则。
+  * 📑 **细致标注**：每个样本均配备详尽的风险推理标注，清晰地捕捉了严格安全推理评估所需的复杂性和细微差异。
+  * 🌐 **覆盖全面**：涵盖多种风险领域的多样化场景，为跨越不同安全关键情境的基准测试提供了坚实的平台。
+  * 🔍 **评测指标**：包含明确定义的评测指标，如Safe\@1、Think\@1、Safe\@k和Think\@k，系统性地评估模型的安全一致性及推理准确性。
+  * 📈 **挑战性强**：设计旨在揭示当前LRMs的显著弱点，是识别模型亟需改进之处的理想工具。
+
+* 我们对23个最先进的LRMs进行了广泛的评测，得出了以下几个关键结论：
+
+  * 表现最好的模型在准确识别风险推理方面仍然表现有限，正确率仅达到38%。
+  * 许多LRMs的表面安全输出与其内在推理能力之间存在明显差距，凸显了SSA现象的普遍存在。
+  * 明确的安全指南以及使用高质量推理数据的专项微调，显著提升了LRMs缓解SSA的能力，但有时会导致模型的敏感性增加。
+
+通过BeyondSafeAnswer基准，我们的研究推动了开发真正具备风险意识、能稳健应对复杂安全关键情境的LRMs这一重要目标。
+
+---
 
 ## 项目结构
-
 ```
 BSA_OpenSource/
 ├── Batch_Call_LLM/       # 批量调用LLM的脚本和配置
@@ -109,7 +205,3 @@ python Evaluation_Metric/evaluate.py [参数]
 - **非商业性使用**：您不得将本作品用于商业目的
 
 详细许可条款请参阅项目根目录下的LICENSE文件或访问：https://creativecommons.org/licenses/by-nc/4.0/legalcode.zh-Hans
-
-## 贡献指南
-
-[请在此处添加贡献指南] 

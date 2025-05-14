@@ -1,21 +1,21 @@
-# Kimi API配置
+# Kimi API Configuration
 model:
-  api_key: "YOUR_API_KEY"  # 在这里替换为你的API密钥
-  base_url: "https://ark.cn-beijing.volces.com/api/v3"
-  model_name: "doubao-1-5-thinking-pro-250415"
+  api_key: "YOUR_API_KEY"  # Replace with your API key here
+  base_url: "YOUR_Base_Url"
+  model_name: "YOUR_Model_Name"
   temperature: 0.6
   top_p: 0.95
 
-# 运行时配置
+# Runtime Configuration
 runtime:
-  max_concurrent: 100      # 最大并发数
-  retry_times: 3         # 失败重试次数
-  retry_delay: 1         # 重试间隔(秒)
-  save_interval: 10      # 每处理多少条保存一次
-  log_level: "INFO"     # 日志级别: DEBUG, INFO, WARNING, ERROR
+  max_concurrent: 100      # Maximum number of concurrent requests
+  retry_times: 3         # Number of retry attempts on failure
+  retry_delay: 1         # Retry interval in seconds
+  save_interval: 10      # Save checkpoint every N processed items
+  log_level: "INFO"     # Logging level: DEBUG, INFO, WARNING, ERROR
 
-# 输入输出配置
+# Input/Output Configuration
 io:
-  input_file: "../data/doubao_infer_full_data.csv"    # 输入CSV文件路径
-  output_file: "../data/doubao_infer_full_data_results.csv"            # 输出CSV文件路径
-  checkpoint_dir: "../data/checkpoints/"        # 检查点保存目录 
+  input_file: "YOUR_Input_File_Path"    # Input CSV file path
+  output_file: "YOUR_Output_File_Path"            # Output CSV file path
+  checkpoint_dir: "YOUR_Checkpoint_Dir"        # Checkpoint directory
