@@ -68,7 +68,7 @@
       "@type": "cr:FileObject",
       "@id": "dataset.csv",
       "name": "dataset.csv",
-      "contentUrl": "https://raw.githubusercontent.com/OpenStellarTeam/BSA/refs/heads/main/Croissant/data/dataset.csv",
+      "contentUrl": "data/dataset.csv",
       "encodingFormat": "text/csv",
       "sha256": "3cb810382c5f8db1e603c0759bf81dcd3d66eed9d66771c67e525213a605f887"
     }
