@@ -61,6 +61,13 @@ This benchmark significantly contributes to ensuring AI systems are genuinely se
 Through the BeyondSafeAnswer benchmark, our work advances the critical goal of developing genuinely risk-aware LRMs capable of robustly handling nuanced safety-critical scenarios.
 
 ---
+## Leaderboard
+
+<p align="center">
+  <img src="image/leaderboard_all.jpg" width="700px"/>
+</p>
+
+---
 
 ## Project Structure
 

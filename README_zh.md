@@ -82,6 +82,13 @@ Beyond Safe Answers 是一个创新性的基准数据集，旨在全面评估大
 通过BeyondSafeAnswer基准，我们的研究推动了开发真正具备风险意识、能稳健应对复杂安全关键情境的LRMs这一重要目标。
 
 ---
+## Leaderboard
+
+<p align="center">
+  <img src="image/leaderboard_all.jpg" width="700px"/>
+</p>
+
+---
 
 ## 项目结构
 ```
