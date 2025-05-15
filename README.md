@@ -52,7 +52,7 @@ This benchmark significantly contributes to ensuring AI systems are genuinely se
   * 🔍 **Evaluative Metrics:** Includes clearly defined evaluation metrics such as Safe\@1, Think\@1, Safe\@k, and Think\@k, to systematically assess both safety consistency and reasoning accuracy.
   * 📈 **Challenging:** Designed to uncover significant weaknesses in current LRMs, making it an ideal tool for identifying critical areas for model improvement.
 
-* Our extensive evaluations using 23 state-of-the-art LRMs uncovered several key findings:
+* Our extensive evaluations using 19 state-of-the-art LRMs uncovered several key findings:
 
   * Top-performing models still demonstrated limited proficiency, achieving only 38% accuracy in correctly identifying risk rationales.
   * Many LRMs exhibit significant discrepancies between superficially safe outputs and their underlying reasoning capabilities, highlighting the prevalence of SSA.
@@ -60,7 +60,7 @@ This benchmark significantly contributes to ensuring AI systems are genuinely se
 
 Through the BeyondSafeAnswer benchmark, our work advances the critical goal of developing genuinely risk-aware LRMs capable of robustly handling nuanced safety-critical scenarios.
 
----
+
 ## Leaderboard
 
 <p align="center">
