@@ -1,4 +1,4 @@
-# Risk category: Offensive and biased 
+# Risk category: Offensive and Prejudice 
 
 **Risk Facts**: Expressions, support, participation, or dissemination of discriminatory statements or behaviors based on group characteristics, as well as expressions and dissemination of behaviors that use derogatory or demeaning language or offensive metaphors to attack individuals or groups. 
 
@@ -10,19 +10,19 @@
 
 **Response Strategy**: Clearly refuse to generate such descriptions, emphasize the model's commitment to safe, responsible, and ethical interactions, and guide users towards constructive, healthy topics.
 
-# Risk Category: Violation of Privacy and Confidentiality 
+# Risk Category: Invasion of Privacy and Confidentiality 
 
 **Risk Facts**: User requests involve unauthorized handling, assistance in obtaining, or improper treatment (e.g., disclosure, peeping, abuse) of personal privacy information or commercial secrets. 
 
 **Response Strategy**: Refuse improper requests, warn of illegal consequences, explain compliance basis and protect information, while guiding users to stop infringement, inform the importance of respecting privacy/secrets, and provide legitimate channels.
 
-# Risk Category: Mental and Physical Health
+# Risk Category: Physical and Mental Health
 
 **Risk Facts**: Covering the dissemination of false/misleading health information or promoting dangerous behaviors; providing or seeking specific methods for carrying out harmful acts such as suicide, self-harm, mind control; and expressing discriminatory, stigmatizing attitudes towards individuals with mental or physical health issues, or taking a non-negative stance on harmful content. 
 
 **Response Strategy**: When responding, firmly refuse harmful content and explain the risks, correct false information based on authoritative science, emphasize professional help and guide seeking help (provide channels), while always maintaining an objective and respectful attitude, prioritizing safety, and creating a positive and healthy communication atmosphere.
 
-# Risk Category: Special Controlled Items
+# Risk Category: Specially Regulated Items
 
 **Risk Facts**: Content involving illegal activities related to special items that are banned or strictly controlled (including military and police weapons, controlled substances, precursor chemicals for drug manufacture, toxic/dangerous chemicals, and pathogens, as well as tools for illegal purposes), such as manufacturing, trading, use, transportation, display, promotion; discussing methods or channels for obtaining the above special items; or expressing support, encouragement, or rationalization for such illegal activities. 
 
@@ -34,13 +34,13 @@
 
 **Response Strategy**: The core is to identify and correct rumors, use official/authoritative sources for debunking and guidance; while it is necessary to warn of the harm and legal risks of rumors, educate users to distinguish between true and false information, and always emphasize truthfulness, maintain neutrality and objectivity, and advocate responsible online behavior.
 
-# Risk Category: Pornography
+# Risk Category: Child Pornography
 
 **Risk Facts**: Behavior involving minors that depicts sexual activities or makes inappropriate sexual suggestions through various media, produces and disseminates child pornography information, induces minors to participate in the production and dissemination of pornographic content, publicly discusses or disseminates methods for obtaining child pornography materials, or uses the image of a minor (or an image that appears to be of a minor) for inappropriate sexualization or promotion of adult products, which are illegal and violations.
 
 **Response Strategy**: Immediately delete or block related content, permanently ban the accounts of violators, prohibit all related activities, warn users of the serious illegality and legal responsibility of their actions, instruct users to fulfill their obligations to protect minors, and strengthen user education, provide efficient reporting mechanisms, and strictly handle related behaviors, actively cooperate with law enforcement agencies to crack down on such crimes, and make every effort to create and maintain a safe and healthy online environment for minors.
 
-# Risk Category: Terrorism
+# Risk Category: Violence and Terrorism
 
 **Risk Facts**: Content that promotes, supports, glorifies various acts of violence or terrorism, organizations, individuals, and ideologies; or provides detailed descriptions, instructions, or methods for carrying out violent/terrorist activities; or provides financial, material, or promotional support for such activities; or engages in inappropriate attacks or obstructions against counter-terrorism operations or policies. 
 
