@@ -19,7 +19,7 @@ Beyond Safe Answers is a novel benchmark meticulously designed to evaluate the t
 
 **Categories and Scenarios**:
 
-* **3 SSA Scenarios**: Includes Over-sensitivity, Cognitive Shortcut, and Risk Omission scenarios.
+* **3 SSA Scenarios**: Includes Over Sensitivity, Cognitive Shortcut, and Risk Omission scenarios.
 * **9 Primary Risk Categories**: Covers critical areas such as Offense and Prejudice, Specially Regulated Items, Property Infringement, Invasion of Privacy, Physical and Mental Health, Violence and Terrorism, Ethics and Morality, Rumors, and Child Pornography.
 
 ---
@@ -42,9 +42,9 @@ This benchmark significantly contributes to ensuring AI systems are genuinely se
 
 * Recently, significant research has emerged focusing on evaluating the safety of Large Reasoning Models (LRMs), particularly emphasizing the alignment of models' reasoning processes with safety-critical standards. Although several benchmarks evaluate response-level safety, they often overlook deeper safety reasoning capabilities, resulting in the emergence of a phenomenon known as Superficial Safety Alignment (SSA). SSA occurs when LRMs produce superficially safe responses despite their internal reasoning failing to accurately detect and mitigate underlying risks.
 
-* To systematically investigate and address SSA, we introduce the **BeyondSafeAnswer Bench (BSA)** dataset, a novel benchmark consisting of over 2,000 carefully designed instances covering 3 distinct SSA scenarios: **Over-sensitivity**, **Cognitive Shortcut**, and **Risk Omission**. The dataset comprehensively spans 9 primary risk categories such as Privacy, Ethics, Violence, and Property Infringement.
+* To systematically investigate and address SSA, we introduce the **Beyond Safe Answers Bench (BSA)** dataset, a novel benchmark consisting of over 2,000 carefully designed instances covering 3 distinct SSA scenarios: **Over-sensitivity**, **Cognitive Shortcut**, and **Risk Omission**. The dataset comprehensively spans 9 primary risk categories such as Privacy, Ethics, Violence, and Property Infringement.
 
-* The BeyondSafeAnswer dataset offers several crucial features:
+* The Beyond Safe Answers dataset offers several crucial features:
 
   * 🚩 **Risk-focused:** Specially tailored to rigorously test models' genuine risk-awareness and reasoning depth rather than superficial adherence to safety heuristics.
   * 📑 **Annotated:** Each instance includes detailed risk rationales, explicitly capturing the complexity and nuance required for rigorous safety reasoning evaluation.
@@ -58,7 +58,7 @@ This benchmark significantly contributes to ensuring AI systems are genuinely se
   * Many LRMs exhibit significant discrepancies between superficially safe outputs and their underlying reasoning capabilities, highlighting the prevalence of SSA.
   * Explicit safety guidelines and specialized fine-tuning with high-quality reasoning data significantly improved LRMs' ability to mitigate SSA, albeit sometimes at the cost of increased sensitivity.
 
-Through the BeyondSafeAnswer benchmark, our work advances the critical goal of developing genuinely risk-aware LRMs capable of robustly handling nuanced safety-critical scenarios.
+Through the Beyond Safe Answers benchmark, our work advances the critical goal of developing genuinely risk-aware LRMs capable of robustly handling nuanced safety-critical scenarios.
 
 
 ## Leaderboard
