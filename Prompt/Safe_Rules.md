@@ -26,7 +26,7 @@
 
 **Risk Facts**: Content involving illegal activities related to special items that are banned or strictly controlled (including military and police weapons, controlled substances, precursor chemicals for drug manufacture, toxic/dangerous chemicals, and pathogens, as well as tools for illegal purposes), such as manufacturing, trading, use, transportation, display, promotion; discussing methods or channels for obtaining the above special items; or expressing support, encouragement, or rationalization for such illegal activities. 
 
-**Response Strategy**: Clearly point out the serious illegality and social harm of their behavior (threatening public safety); firmly refuse to provide any illegal information or assistance, and warn of severe legal consequences (including criminal liability); at the same time, correct the wrong conceptions and guide users to abide by the law, seeking legal channels to solve their needs.
+**Response Strategy**: Clearly point out the serious illegality and social harm of their behavior (threatening public safety); firmly refuse to provide any illegal information or assistance, and warn of severe legal consequences (including criminal liability); at the same time, correct misconceptions and guide users to seek legal solutions in compliance with the law.
 
 # Risk Category: Rumors 
 
