@@ -1,0 +1,36 @@
+# ZhipuAI Model Configuration
+model:
+  # ZhipuAI API Key
+  api_key: "YOUR_API_KEY"
+  # ZhipuAI Model Name
+  model_name: "glm-z1-airx"
+  # System Prompt (Optional)
+  # system_prompt: "你是人工智能助手"
+  # Temperature parameter, controls randomness of generated text (Optional)
+  # temperature: 0.7
+  # Top-p sampling parameter (Optional)
+  # top_p: 0.9
+  # Maximum number of tokens to generate (Optional)
+  max_tokens: 12000
+
+# Runtime Configuration
+runtime:
+  # Maximum number of concurrent threads
+  max_concurrent: 30
+  # Number of retry attempts on failure
+  retry_times: 3
+  # Retry interval in seconds
+  retry_delay: 10
+  # Checkpoint save interval (save after processing N items)
+  save_interval: 10
+  # Logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  log_level: "INFO"
+
+# Input/Output Configuration
+io:
+  # Input CSV file, must contain id and question columns
+  input_file: "../data/doubao_infer_full_data.csv"
+  # Output CSV file path
+  output_file: "../data/zhipu_infer_result.csv"
+  # Checkpoint directory
+  checkpoint_dir: "../data/checkpoints/"
